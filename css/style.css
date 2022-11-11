@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #fffaf4;
+}
+
+/*--------------------------header--------------------------*/
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2.5;
+  background-color: #e2e2e2;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 4px 5px 15px rgb(0 0 0 / 50%);
+}
+
+/*--------------------------header--------------------------*/
+
+/*---------------------------main---------------------------*/
+
+.conteiner {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: calc(1108px + 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 15px;
+  border: 1px solid #e2e2e2;
+}
+
+ul,
+ol {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+p {
+  color: #ff0f67;
+}
+
+.number_of_words {
+  color: #af5b81;
+}
+#first_words {
+  color: #a77bf2;
+}
+ol span {
+  color: #009eff;
+}
+li > p {
+  color: #00ccae;
+}
+[data-target] {
+  color: #b69200;
+}
+[data-target="ukrainian"] {
+  color: #aa0597;
+}
+.ukrainian ~ li > p {
+  color: #ff71cb;
+}
+
+[data-target="ukrainian"].similar_languages {
+  color: #20c9d8;
+}
+li:last-child > p {
+  color: #3cdd84;
+}
