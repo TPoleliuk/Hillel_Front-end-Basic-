@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #7</title>
+    <link rel="stylesheet" href="../FONTS/font.css">
+    <link rel="stylesheet" href="../CSS/style-search.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Homework #7</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-box">
+                <h2>РОЗШИРЕНИЙ ПОШУК</h2>
+                <form action="https://fom.in.ua/echo" method="post" target="_blank">
+
+                    <div class="item">
+                        <span class="label">Тип кузова:</span>
+                        <div class="choice-side">
+                            <label>
+                                <input type="checkbox" name="body-type" value="estate-car">Універсал
+                            </label>
+                            <label>
+                                <input type="checkbox" name="body-type" value="crossover">Кросовер
+                            </label>
+                            <label>
+                                <input type="checkbox" name="body-type" value="sedan">Cедан
+                            </label>
+                            <label>
+                                <input type="checkbox" name="body-type" value="hatchback">Хетчбек
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <label for="car-brands" class="label">Марка авто:</label>
+                        <select id="car-brands" name="car-brands" class="choice-side">
+                            <option value="none" class="option" disabled selected>Оберіть варіант</option>
+                            <option value="toyota" class="option">Toyota</option>
+                            <option value="renault" class="option">Renault</option>
+                            <option value="kia" class="option">Kia</option>
+                            <option value="skoda" class="option">Skoda</option>
+                            <option value="nissan" class="option">Nissan</option>
+                            <option value="hyundai" class="option">Hyundai</option>
+                            <option value="chery" class="option">Chery</option>
+                            <option value="mitsubishi" class="option">Mitsubishi</option>
+                            <option value="volkswagen" class="option">Volkswagen</option>
+                            <option value="suzuki" class="option">Suzuki</option>
+                        </select>
+                    </div>
+
+                    <div class="item">
+                        <label for="producing-country" class="label">Країна виробник:</label>
+                        <select id="producing-country" name="producing country" class="choice-side" size="5" multiple>
+                            <option value="usa" class="option">США</option>
+                            <option value="germany" class="option">Німеччина</option>
+                            <option value="france" class="option">Франція</option>
+                            <option value="japan" class="option">Японія</option>
+                            <option value="china" class="option">Китай</option>
+                            <option value="italy" class="option">Італія</option>
+                            <option value="south-korea" class="option">Південна Корея</option>
+                        </select>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Ціна, грн.:</span>
+                        <div class="choice-side">
+                            <div class="price">
+                                <label for="price-from">від</label>
+                                <input type="number" name="price-from" id="price-from" min="100000" max="15000000">
+                            </div>
+                            <div class="price">
+                                <label for="price-to">до</label>
+                                <input type="number" name="price-to" id="price-to" min="100000" max="15000000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Рік випуску:</span>
+                        <div class="choice-side">
+                            <div class="year-of-production">
+                                <label for="year-of-production-from">від</label>
+                                <input type="number" name="year-of-production-from" id="year-of-production-from"
+                                    min="1990" max="2022">
+                            </div>
+                            <div class="year-of-production">
+                                <label for="year-of-production-to">до</label>
+                                <input type="number" name="year-of-production-to" id="year-of-production-to" min="1990"
+                                    max="2022">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Стан автомобіля:</span>
+                        <div class="choice-side">
+                            <label>
+                                <input type="checkbox" name="car-condition" value="no-accident">Не був у ДТП
+                            </label>
+                            <label>
+                                <input type="checkbox" name="car-condition" value="customs-clearance">Розмитнений
+                            </label>
+                            <label>
+                                <input type="checkbox" name="car-condition" value="in-credit">В кредиті
+                            </label>
+                            <label>
+                                <input type="checkbox" name="car-condition" value="on-go">На ходу
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Тип палива:</span>
+                        <div class="choice-side">
+                            <label>
+                                <input type="radio" name="fuel-type" value="gasoline">Бензин
+                            </label>
+                            <label>
+                                <input type="radio" name="fuel-type" value="diesel">Дизель
+                            </label>
+                            <label>
+                                <input type="radio" name="fuel-type" value="gas">Газ
+                            </label>
+                            <label>
+                                <input type="radio" name="fuel-type" value="electro">Електро
+                            </label>
+                            <label>
+                                <input type="radio" name="fuel-type" value="hybrid">Гібрид
+                            </label>
+                            <label>
+                                <input type="radio" name="fuel-type" value="other">Інше
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Тип коробки передач:</span>
+                        <div class="choice-side">
+                            <label>
+                                <input type="radio" name="type-of-transmission" value="manual">Механіка
+                            </label>
+                            <label>
+                                <input type="radio" name="type-of-transmission" value="automatic">Автомат
+                            </label>
+                            <label>
+                                <input type="radio" name="type-of-transmission" value="variator">Варіатор
+                            </label>
+                            <label>
+                                <input type="radio" name="type-of-transmission" value="tiptronic">Типтронік
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="item">
+                        <label for="color" class="label">Колір:</label>
+                        <input type="color" id="color" name="color" class="choice-side" list="colorList"
+                            value="#808080">
+                        <datalist id="colorList">
+                            <option value="#000000" label="чорний"></option>
+                            <option value="#ff0000" label="червоний"></option>
+                            <option value="#808080" label="сірий"></option>
+                            <option value="#ffffff" label="Білий"></option>
+                            <option value="#0000ff" label="Синій"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="item">
+                        <span class="label">Комфорт:</span>
+                        <div class="choice-side">
+                            <label>
+                                <input type="checkbox" name="comfort" value="sunroof">Люк
+                            </label>
+                            <label>
+                                <input type="checkbox" name="comfort" value="steering-wheel-heating">Обігрів керма
+                            </label>
+                            <label>
+                                <input type="checkbox" name="comfort" value="cruise-control">Круїз-контроль
+                            </label>
+                            <label>
+                                <input type="checkbox" name="comfort" value="rain-sensor">Датчик дощу
+                            </label>
+                            <label>
+                                <input type="checkbox" name="comfort" value="tinted-windows">Тоновані вікна
+                            </label>
+                            <label>
+                                <input type="checkbox" name="comfort" value="220V-outlet">Розетка 220V
+                            </label>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <button>Пошук</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
