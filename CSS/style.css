@@ -6,7 +6,9 @@
 
 html {
   font-size: 16px;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #333333;
 }
 
 a {
@@ -29,5 +31,43 @@ img {
 
 /*------------------------------------------------header------------------------------------------------*/
 
+.main-title {
+  font-size: 1.5rem;
+  line-height: 2.2;
+  background-color: #e2e2e2;
+  text-align: center;
+  box-shadow: 5px 5px 15px #00000080;
+}
+
 /*------------------------------------------------header------------------------------------------------*/
 /*-------------------------------------------------main-------------------------------------------------*/
+
+.calendar {
+  border: 1px solid #333333;
+  margin: 2rem auto;
+}
+
+.caption-of-table {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.month {
+  width: 50%;
+  border: 1px solid #333333;
+}
+
+.month table {
+  width: 100%;
+  text-align: center;
+}
+
+.month th,
+td {
+  padding: 0.25rem;
+}
+
+.first-column {
+  background-color: yellow;
+}
