@@ -1,3 +1,8 @@
+:root {
+  --color-lightgrey: #eeeff1;
+  --color-blue: #34547a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +11,9 @@
 
 html {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.625;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #333333;
 }
 
 a {
@@ -23,25 +27,151 @@ img {
 
 .container {
   width: 100%;
-  max-width: calc(1108px + 2rem);
+  max-width: calc(1110px + 2rem);
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-/*------------------------------------------------header------------------------------------------------*/
+/*------------------------------------------------common------------------------------------------------*/
+.background-lightgrey {
+  background-color: var(--color-lightgrey);
+}
 
-.main-page {
-  background-color: #e2e2e2;
+.background-blue {
+  background-color: var(--color-blue);
+}
+
+.description {
+  color: #727272;
+  max-width: 33.75rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin: 0 auto;
   text-align: center;
-  box-shadow: 5px 5px 15px #00000080;
+}
+/*------------------------------------------------common------------------------------------------------*/
+/*------------------------------------------------header------------------------------------------------*/
+.header {
+  padding: 4.9375rem 0rem;
+  letter-spacing: 0.1em;
 }
 
-.main-page h1 {
-  font-size: 1.5rem;
-  line-height: 2.2;
+.active {
+  font-weight: 500;
+  color: #34547a;
 }
 
+.nav-link:hover {
+  color: #34547a;
+}
+
+.nav-link + .nav-link {
+  padding-left: 2.625rem;
+}
 /*------------------------------------------------header------------------------------------------------*/
 /*-------------------------------------------------main-------------------------------------------------*/
+.main-section {
+  padding-top: 4.5rem;
+  padding-bottom: 8.8125rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  line-height: 4.9375rem;
+  font-weight: 500;
+}
+
+.main-section .description {
+  padding-top: 3.75rem;
+  padding-bottom: 4.0625rem;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.button {
+  min-width: 14.0625rem;
+  padding: 1.25rem 0.5rem;
+  color: white;
+  letter-spacing: 0.1em;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.section-about {
+  padding-top: 7rem;
+  padding-bottom: 6.25rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.1875;
+  font-weight: 500;
+  padding-bottom: 3.125rem;
+}
+
+.card-section {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card + .card {
+  margin-left: 2.8125rem;
+}
+
+.card-image {
+  vertical-align: top;
+}
+
+.card-text {
+  text-align: left;
+  display: inline-block;
+  padding-left: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.video-section {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.video {
+  padding-top: 3.5625rem;
+  width: 100%;
+  aspect-ratio: 1.85/1;
+  border: none;
+}
+/*-------------------------------------------------main-------------------------------------------------*/
+/*------------------------------------------------footer------------------------------------------------*/
+.footer {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  color: white;
+}
+
+.copyright {
+  font-size: 0.8125rem;
+  line-height: 1.3125rem;
+  padding-top: 1.25rem;
+}
+/*------------------------------------------------footer------------------------------------------------*/
