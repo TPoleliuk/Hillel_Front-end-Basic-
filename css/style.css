@@ -33,16 +33,57 @@ img {
 
 /*------------------------------------------------header------------------------------------------------*/
 
-.main-page {
+/*----------------------------general menu styles----------------------------*/
+.bg-menu {
   background-color: #e2e2e2;
-  text-align: center;
-  box-shadow: 5px 5px 15px #00000080;
 }
 
-.main-page h1 {
-  font-size: 1.5rem;
-  line-height: 2.2;
+.header ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  letter-spacing: 0.05em;
 }
 
+.header li a {
+  padding: 0 1rem;
+}
+
+.header li:hover {
+  background-color: #ffc73aae;
+}
+/*----------------------------general menu styles-----------------------------*/
+/*------------------------------nav menu styles-------------------------------*/
+.main-menu > .parent-variant {
+  display: inline-block;
+}
+
+.main-menu > .parent-variant:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.parent-variant {
+  position: relative;
+}
+
+.child-menu {
+  display: none;
+}
+
+.parent-variant:hover > .child-menu {
+  display: block;
+  min-width: 11rem;
+  position: absolute;
+}
+
+.main-menu > .parent-variant > .child-menu {
+  top: 100%;
+}
+
+.child-menu > .parent-variant > .child-menu {
+  left: 100%;
+  top: 0%;
+}
+/*------------------------------nav menu styles-------------------------------*/
 /*------------------------------------------------header------------------------------------------------*/
 /*-------------------------------------------------main-------------------------------------------------*/
