@@ -1,13 +1,21 @@
 @font-face {
-  font-family: "Roboto";
-  src: url(./Roboto-Regular.woff2) format("woff2"),
-    url(./Roboto-Regular.woff) format("woff");
+  font-family: "Inter";
+  src: url(./Inter-Regular.woff2) format("woff2"),
+    url(./Inter-Regular.woff) format("woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url(./Roboto-Bold.woff2) format("woff2"),
-    url(./Roboto-Bold.woff) format("woff");
-  font-weight: 700;
+  font-family: "StyleScript";
+  src: url(./StyleScript-Regular.woff2) format("woff2"),
+    url(./StyleScript-Regular.woff) format("woff");
+  font-weight: 400;
 }
+
+@font-face {
+  font-family: "STSong";
+  src: url(./STSong-Light.woff2) format("woff2"),
+    url(./STSong-Light.woff) format("woff");
+  font-weight: 300;
+}
+
