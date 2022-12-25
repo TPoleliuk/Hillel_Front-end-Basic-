@@ -1,0 +1,186 @@
+:root {
+  --primary-bright-color: #ff6336;
+  --primary-light-color: #ff9c7d;
+  --secondary-color: #fff8e4;
+  --section-bg-color-1: #c9e8f2;
+  --section-bg-color-2: #dabc98;
+  --footer-bg-color: #eeeeee;
+  --light-gray-color: rgba(0, 0, 0, 0.5);
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Graphik LCG", sans-serif;
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1290px + 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.btn {
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.btn-small {
+  min-width: 6rem;
+  padding: 0.675rem 1rem;
+}
+
+.btn-big {
+  min-width: 8rem;
+  padding: 1.05rem 1rem;
+}
+
+.btn-white {
+  border-color: var(--light-gray-color);
+  background-color: var(--white-color);
+}
+
+.btn-white:hover {
+  border-color: var(--light-gray-color);
+  background-color: var(--light-gray-color);
+  color: var(--white-color);
+}
+
+.btn-primary-bright {
+  border-color: var(--primary-bright-color);
+  background-color: var(--primary-bright-color);
+  color: var(--white-color);
+}
+
+.btn-primary-bright:hover {
+  background-color: var(--white-color);
+  color: var(--primary-bright-color);
+}
+
+.btn-black {
+  border-color: var(--black-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.btn-black:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.underline {
+  border-bottom: 1px solid;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.main-description {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.note {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header .nav .nav-link:hover,
+.footer .link-list .nav-link:hover,
+a.underline:hover,
+a.description.font-weight-600:hover {
+  color: var(--primary-bright-color);
+}
+
+.caption-card {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

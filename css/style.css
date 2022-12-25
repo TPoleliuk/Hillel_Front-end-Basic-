@@ -1,48 +1,293 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url(library.css);
+
+/*----------------------------------------------------header-----------------------------------------------------*/
+.header {
+  padding: 1.25rem 0;
+  border-bottom: #cccccc solid 1px;
 }
 
-html {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #333333;
+.header .logo-nav,
+.header .logo-nav .nav {
+  gap: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.header .btn-wrap {
+  gap: 0.5rem;
+}
+/*----------------------------------------------------header-----------------------------------------------------*/
+
+/*-----------------------------------------------------main------------------------------------------------------*/
+.main-section {
+  padding: 4.8rem 0;
+  padding-bottom: 6.85rem;
 }
 
-img {
-  max-width: 100%;
+.main-section .main-image {
+  max-width: 37.35rem;
 }
 
-.container {
-  width: 100%;
-  max-width: calc(1108px + 2rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
+.main-section .text-wrap {
+  max-width: 27.15rem;
+}
+
+.main-section .text-wrap .main-title {
+  font-size: 3.25rem;
+  line-height: 3.5rem;
+}
+
+.main-section .text-wrap .main-description {
+  max-width: 23.55rem;
+  margin: 2.5rem 0;
+}
+
+.main-section .text-wrap .btn-wrap {
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.partners-section {
+  background-color: var(--primary-light-color);
+  padding: 5.2rem 0;
+}
+
+.partners-section .section-title {
+  max-width: 36rem;
+  margin-bottom: 3.5rem;
+}
+
+.partners-section .logo-wrap {
+  gap: 1rem 5.15rem;
+}
+
+.benefits-section {
+  padding-top: 4.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.benefits-section .row-wrap {
+  gap: 1rem 6.9rem;
+}
+
+.benefits-section .row-wrap:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.benefits-section .row-wrap:not(:first-child) {
+  margin-top: 12.5rem;
+}
+
+.benefits-section .text-wrap {
+  max-width: 26rem;
+}
+
+.benefits-section .text-wrap .description {
+  margin: 1.5rem 0;
+}
+
+.localized-items-section {
+  background-color: var(--secondary-color);
+  padding: 6rem 0;
+}
+
+.localized-items-section .section-title {
+  margin-bottom: 2.9rem;
+}
+
+.localized-items-section .card-wrap {
+  gap: 2.85rem 5.5rem;
+}
+
+.localized-items-section .card-wrap .card {
+  gap: 1.15rem;
+  max-width: 16.5rem;
+}
+
+.localized-items-section .card-wrap .description {
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+.localization-team-section {
+  padding: 7.7rem 0;
+}
+
+.localization-team-section .section-title {
+  margin-bottom: 3.75rem;
+}
+
+.localization-team-section .card-wrap {
+  gap: 1rem 1.575rem;
+}
+
+.localization-team-section .card-wrap .card {
+  max-width: 20.45rem;
+}
+
+.localization-team-section .card-wrap .wrap-image {
+  width: 8.95rem;
+  height: 10.05rem;
+}
+
+.localization-team-section .card-wrap .caption-card {
+  margin: 2.45rem 0 1.7rem 0;
+}
+
+.localization-team-section .card-wrap .description {
+  margin-bottom: 1.25rem;
+}
+
+.quote-section {
+  background-color: var(--section-bg-color-1);
+  padding: 3.95rem 0;
+}
+
+.quote-section .text-wrap {
+  max-width: 46rem;
   padding-right: 1rem;
-  position: relative;
 }
 
-/*------------------------------------------------header------------------------------------------------*/
-
-.main-page {
-  background-color: #e2e2e2;
-  text-align: center;
-  box-shadow: 5px 5px 15px #00000080;
+.quote-section .note {
+  font-weight: inherit;
+  padding: 1.15rem 0 0.35rem 0;
 }
 
-.main-page h1 {
-  font-size: 1.5rem;
-  line-height: 2.2;
+.software-rating {
+  background-color: var(--section-bg-color-2);
+  padding: 4rem 0;
 }
 
-/*------------------------------------------------header------------------------------------------------*/
-/*-------------------------------------------------main-------------------------------------------------*/
+.software-rating .cake {
+  margin-right: 3.35rem;
+}
+
+.software-rating .wrapper hr {
+  width: 1px;
+  height: 8.4rem;
+  background-color: var(--black-color);
+  border: none;
+  margin-right: 3.55rem;
+}
+
+.software-rating .wrapper .description {
+  margin-right: 6.2rem;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  max-width: 23.05rem;
+}
+
+.software-rating .rating-part {
+  gap: 3.55rem;
+}
+
+.software-rating .rating-part .stars-rating {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.software-rating .rating-part .note {
+  letter-spacing: 0.75px;
+}
+
+.integration-section {
+  padding: 8.25rem 0;
+}
+
+.integration-section .wrapper {
+  gap: 1.5rem;
+}
+
+.integration-section .wrapper .section-title {
+  font-size: 3.25rem;
+  line-height: 3.75rem;
+  max-width: 39.55rem;
+}
+
+.integration-section .wrapper .description {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  max-width: 26.95rem;
+}
+
+.try-it-section {
+  background-color: var(--primary-light-color);
+  padding: 5.45rem 0;
+}
+
+.try-it-section .section-title {
+  max-width: 39.2rem;
+  font-size: 3.25rem;
+  line-height: 3.75rem;
+}
+
+.try-it-section .description {
+  margin-top: 1.45rem;
+  margin-bottom: 2.7rem;
+}
+/*-----------------------------------------------------main------------------------------------------------------*/
+
+/*----------------------------------------------------footer-----------------------------------------------------*/
+.footer {
+  padding-top: 4.6rem;
+  padding-bottom: 2.15rem;
+  background-color: var(--footer-bg-color);
+}
+
+.top-line,
+.bottom-line {
+  gap: 1rem;
+}
+
+.footer .top-line .main-description {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1.4rem;
+}
+
+.footer .top-line .footer-image {
+  margin-bottom: 1.9rem;
+}
+
+.footer .top-line p.description {
+  max-width: 14.5rem;
+  margin-top: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.top-line .nav-block {
+  gap: 1rem;
+  max-width: 42.5rem;
+}
+
+.footer .nav-block .title-block {
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 1.05rem;
+}
+
+.footer .nav-block .link-list {
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  max-width: 8.5rem;
+}
+
+.footer hr {
+  background-color: var(--black-color);
+  height: 1px;
+  border: none;
+  margin-top: 4.75rem;
+  margin-bottom: 2.35rem;
+}
+
+.footer .bottom-line {
+  font-size: 0.6rem;
+  line-height: 1.25;
+}
+
+.footer .left-part .description {
+  max-width: 15.05rem;
+  margin-left: 0.7rem;
+}
+/*----------------------------------------------------footer-----------------------------------------------------*/
