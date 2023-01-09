@@ -1,48 +1,267 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url(../css/library.css);
+
+/*------------------------------------------------header------------------------------------------------*/
+.header .container {
+  grid-template-areas:
+    "lang-contact lang-contact"
+    "logo         menu";
 }
 
-html {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: #333333;
+.header .lang-contact {
+  padding: 10px 0;
+  color: var(--grey-text-color);
+  justify-content: space-between;
+  grid-area: lang-contact;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.header .lang-contact .lang-switcher .lang {
+  width: 33px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
-img {
-  max-width: 100%;
+.header .lang-contact .lang-switcher .lang:hover {
+  background-color: var(--grey-bg-color);
 }
 
-.container {
+.header .lang-contact .lang-switcher input:checked + .lang {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.header .lang-contact .lang-switcher input,
+.header .lang-contact .address,
+.header .lang-contact .facebook {
+  display: none;
+}
+
+.header .bg-grey {
+  height: 45px;
   width: 100%;
-  max-width: calc(1108px + 2rem);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
+  background-color: var(--grey-bg-color);
+  z-index: -1;
 }
 
-/*------------------------------------------------header------------------------------------------------*/
-
-.main-page {
-  background-color: #e2e2e2;
-  text-align: center;
-  box-shadow: 5px 5px 15px #00000080;
+.header .logo {
+  padding: 15px 0 10px;
+  grid-area: logo;
+}
+/*---------------------------------------------burger-menu----------------------------------------------*/
+.header .menu {
+  padding: 12.5px 0;
+  justify-content: flex-end;
+  grid-area: menu;
 }
 
-.main-page h1 {
+.header .menu .burger-checkbox {
+  opacity: 0;
+  z-index: 3;
+}
+
+.header .menu .burger {
+  padding: 9px 7px;
+  border-radius: 8px;
+}
+
+.header .menu .burger-checkbox:active + .burger,
+.header .menu .burger-checkbox:checked ~ .nav .nav-link:active {
+  background-color: var(--grey-separator-color);
+}
+
+.header .menu .burger span {
+  width: calc(100% - 14px);
+  height: 2px;
+  background-color: var(--main-regular-color);
+  z-index: 2;
+}
+
+.header .menu .burger span:first-child {
+  top: 9px;
+}
+
+.header .menu .burger span:nth-child(2),
+.header .menu .burger span:nth-child(3) {
+  top: calc(9px + 4px + 2px);
+}
+
+.header .menu .burger span:last-child {
+  bottom: 9px;
+}
+
+.header .menu .burger-checkbox:checked ~ .burger span:first-child {
+  top: 32px;
+  opacity: 0;
+}
+
+.header .menu .burger-checkbox:checked ~ .burger span:nth-child(2) {
+  background-color: #ec6f5d;
+  transform: rotate(45deg);
+}
+
+.header .menu .burger-checkbox:checked ~ .burger span:nth-child(3) {
+  background-color: #ec6f5d;
+  transform: rotate(-45deg);
+}
+
+.header .menu .burger-checkbox:checked ~ .burger span:last-child {
+  bottom: 32px;
+  opacity: 0;
+}
+
+.header .menu .bg-menu {
+  background-color: var(--white-color);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.header .menu .burger-checkbox:checked ~ .bg-menu {
+  background-color: var(--main-regular-color);
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.header .menu .nav {
   font-size: 1.5rem;
-  line-height: 2.2;
+  line-height: 1.8125rem;
+  text-align: center;
+  padding: 45.5px 0.5rem;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  top: 100%;
+  height: 100%;
 }
 
+.header .menu .burger-checkbox:checked ~ .nav {
+  top: 0%;
+}
+
+.header .menu .nav-wrap {
+  gap: 15px;
+  flex-direction: column;
+  padding: 64px 0.75rem 0.75rem;
+  background-color: var(--white-color);
+  border-radius: 0.75rem;
+  height: 100%;
+}
+
+.header .menu .nav .nav-link a,
+.footer .contact-part .mail {
+  color: var(--active-regular-color);
+}
+
+.header .menu .nav .nav-link.active a,
+.main-section .nav-card:hover .title-card,
+.footer .address-part .address-link:hover,
+.footer .contact-part .mail:hover {
+  color: var(--accent-color);
+}
+
+.header .menu .nav-link {
+  background-color: var(--grey-bg-color);
+  border-radius: 0.75rem;
+  padding: 7px 0;
+}
+
+body.lock {
+  overflow: hidden;
+}
+/*---------------------------------------------burger-menu----------------------------------------------*/
 /*------------------------------------------------header------------------------------------------------*/
+
 /*-------------------------------------------------main-------------------------------------------------*/
+.main-section .main-title {
+  margin: 30px 0;
+}
+
+.main-section .card-wrap {
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.main-section .nav-card .photo {
+  aspect-ratio: 1.05/1;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.main-section .text-wrap .title-card {
+  margin-bottom: 5px;
+}
+
+.main-section .text-wrap .description {
+  color: var(--grey-text-color);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+.main-section .btn {
+  background-color: var(--grey-bg-color);
+  border-radius: 50%;
+}
+
+.main-section .nav-card:hover svg path {
+  stroke: var(--accent-color);
+}
+/*-------------------------------------------------main-------------------------------------------------*/
+
+/*------------------------------------------------footer------------------------------------------------*/
+.footer {
+  background-color: var(--grey-bg-color);
+  padding: 30px 0;
+}
+
+.footer .container {
+  grid-template-areas:
+    "address-part"
+    "contact-part"
+    "copyright-part";
+  gap: 21px;
+}
+
+.footer .address-contact {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .address-part {
+  grid-area: address-part;
+}
+
+.footer .address-part .address-link {
+  font-size: 0.75rem;
+  color: var(--active-regular-color);
+  letter-spacing: 1px;
+}
+
+.footer .contact-part {
+  grid-area: contact-part;
+}
+
+.facebook svg {
+  display: flex;
+}
+
+.facebook svg:hover path {
+  fill: var(--accent-color);
+}
+
+.footer .contact-part .tel {
+  color: var(--main-alt-color);
+}
+
+.footer .copyright-part {
+  margin-top: 9px;
+  grid-area: copyright-part;
+  color: var(--grey-text-color);
+  align-items: center;
+  flex-direction: column;
+}
+/*------------------------------------------------footer------------------------------------------------*/
