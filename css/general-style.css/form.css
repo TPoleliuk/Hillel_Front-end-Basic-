@@ -1,0 +1,87 @@
+/*------------------------------------------------form-------------------------------------------------*/
+.form {
+  padding: 30px;
+}
+
+.form .form-caption {
+  font-size: 1.875rem;
+  line-height: 2.3125rem;
+}
+
+.form .input-textarea {
+  padding: 14px;
+  line-height: 1.625;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+.form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.form .input-textarea::placeholder {
+  color: var(--grey-text-color);
+}
+
+.form .input-textarea:focus,
+.form .input-textarea:focus.invalid {
+  border: 1px solid var(--active-regular-color);
+  color: initial;
+}
+
+.form .input-textarea:invalid,
+.form .input-textarea.invalid {
+  border: 1px solid var(--invalid-color);
+  color: var(--invalid-color);
+}
+
+.form .contact-question {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.form .contact-question {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
+.form .submit-btn #lng-send-message.delete {
+  display: none;
+}
+
+.form .submit-btn #lng-sent {
+  color: transparent;
+}
+
+.form .submit-btn #lng-sent.block {
+  color: var(--main-regular-color);
+}
+
+.form .submit-btn svg {
+  transform: rotate(-90deg);
+}
+
+.form .submit-btn.progress-status {
+  box-shadow: none;
+  background-color: var(--grey-bg-alt-color);
+  color: var(--main-regular-color);
+}
+
+.form .submit-btn .progress-bar.active {
+  animation: progress 2s linear forwards;
+}
+
+@keyframes progress {
+  15% {
+    stroke-dashoffset: -82;
+  }
+  85% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*------------------------------------------------form-------------------------------------------------*/ ;

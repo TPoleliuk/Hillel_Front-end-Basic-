@@ -1,0 +1,39 @@
+@import url(../general-style.css/light-template-media.css);
+
+@media (min-width: 768px) {
+  /*-------------------------------------------------team-------------------------------------------------*/
+  .team-section .main-title {
+    margin: 0px auto 60px;
+    padding: 0 calc((100% - 664px) / 2);
+  }
+  .team-section .card-wrap {
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .team-section .nav-card:hover .title-card {
+    color: var(--accent-color);
+  }
+  .team-section .nav-card:hover svg path {
+    stroke: var(--accent-color);
+  }
+  .team-section .nav-card:hover .btn {
+    background-color: var(--grey-bg-alt-color);
+  }
+  .team-section .nav-card .photo {
+    height: 400px;
+  }
+  /*-------------------------------------------------team-------------------------------------------------*/
+}
+
+@media (min-width: 1024px) {
+  /*-------------------------------------------------team-------------------------------------------------*/
+  .team-section .main-title {
+    padding: 0;
+  }
+  .team-section .card-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto 60px;
+  }
+  /*-------------------------------------------------team-------------------------------------------------*/
+}
