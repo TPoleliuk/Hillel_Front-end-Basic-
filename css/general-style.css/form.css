@@ -10,7 +10,6 @@
 
 .form .input-textarea {
   padding: 14px;
-  line-height: 1.625;
   width: 100%;
   border: 1px solid #ffffff;
 }
@@ -34,11 +33,6 @@
 .form .input-textarea.invalid {
   border: 1px solid var(--invalid-color);
   color: var(--invalid-color);
-}
-
-.form .contact-question {
-  font-size: 0.875rem;
-  line-height: 1.0625rem;
 }
 
 .form .contact-question {

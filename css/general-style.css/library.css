@@ -11,6 +11,7 @@
   --grey-text-color: #b3b3ba;
   --grey-separator-color: #e6e6f0;
   --white-color: #ffffff;
+  --black-color: #000000;
   --invalid-color: #ff0000;
 
   --red-text-gradient: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -129,6 +130,20 @@ textarea {
   line-height: 2.3125rem;
 }
 
+.description {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+.article-text {
+  line-height: 1.625;
+}
+
+.title-paragraph {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+
 .w32-h32 {
   width: 32px;
   height: 32px;
@@ -177,6 +192,10 @@ textarea {
 
 .color-grey-text {
   color: var(--grey-text-color);
+}
+
+.color-black {
+  color: var(--black-color);
 }
 
 .bg-grey {

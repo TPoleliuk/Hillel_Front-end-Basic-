@@ -154,4 +154,134 @@ const langArr = {
         'ru' : "Телефон", 
         'en' : "Phone number", 
     },
+    'education' : { 
+        'ua' : "ОСВІТА", 
+        'ru' : "ОБРАЗОВАНИЕ", 
+        'en' : "EDUCATION", 
+    },
+    'experience' : { 
+        'ua' : "ДОСВІД", 
+        'ru' : "ОПЫТ", 
+        'en' : "EXPERIENCE",
+    },
+    'kobzar-description-1' : { 
+        'ua' : "Оксана очолює практику міжнародної торгівлі та судноплавства. Вона спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Оксана возглавляет практику международной торговли и судоходства. Она специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Oksana heads the practice of international trade and shipping. She specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'kobzar-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'kobzar-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'kobzar-experience' : { 
+        'ua' : "Її професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Оксана також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Ее профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Оксана также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "Her professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Oksana also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
+    'alexandrovsky-description-1' : { 
+        'ua' : "Олександр очолює практику міжнародної торгівлі та судноплавства. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Александр возглавляет практику международной торговли и судоходства. Он специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Alexander heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'alexandrovsky-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'alexandrovsky-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'alexandrovsky-experience' : { 
+        'ua' : "Його професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Олександр також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Его профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Александр также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "His professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Alexander also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
+    'patrikov-description-1' : { 
+        'ua' : "Євгеній очолює практику міжнародної торгівлі та судноплавства. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Евгений возглавляет практику международной торговли и судоходства. Он специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Evgeny heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'patrikov-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'patrikov-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'patrikov-experience' : { 
+        'ua' : "Його професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Євгеній також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Его профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Евгений также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "His professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Evgeny also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
+    'melnik-description-1' : { 
+        'ua' : "Владислав очолює практику міжнародної торгівлі та судноплавства. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Владислав возглавляет практику международной торговли и судоходства. Он специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Vladislav heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'melnik-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'melnik-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'melnik-experience' : { 
+        'ua' : "Його професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Владислав також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Его профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Владислав также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "His professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Vladislav also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
+    'binn-description-1' : { 
+        'ua' : "Сергій очолює практику міжнародної торгівлі та судноплавства. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Сергей возглавляет практику международной торговли и судоходства. Он специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Sergey heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'binn-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'binn-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'binn-experience' : { 
+        'ua' : "Його професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Сергій також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Его профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Сергей также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "His professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Sergey also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
+    'wolk-description-1' : { 
+        'ua' : "Юлія очолює практику міжнародної торгівлі та судноплавства. Вона спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировини та морськими вантажоперевезеннями.", 
+        'ru' : "Юлия возглавляет практику международной торговли и судоходства. Она специализируется на разрешении споров, связанных с куплей-продажей сырья и морскими грузоперевозками.", 
+        'en' : "Julia heads the practice of international trade and shipping. She specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.", 
+    },
+    'wolk-description-2' : { 
+        'ua' : "Крім цього, представляє інтереси власникыв суден, експедиторів, власників вантажів, судових агентів, транспортних компаній, а також міжнародних банків і P&I клубів.", 
+        'ru' : "Кроме этого, представляет интересы судовладельцев, экспедиторов, грузовладельцев, судовых агентов, транспортных компаний, а также международных банков и P&I клубов.", 
+        'en' : "Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.", 
+    },
+    'wolk-education' : { 
+        'ua' : 'Національний університет «Одеська юридична академія», Магістр права.', 
+        'ru' : 'Национальный университет «Одесская юридическая академия», Магистр права.', 
+        'en' : 'National University "Odessa Law Academy", Master of Law.', 
+    },
+    'wolk-experience' : { 
+        'ua' : "Її професійний досвід включає вирішення спорів за англійським правом та представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Юлія також представляє інтереси клієнтів в державних судах України з аналогічних спорів, а також в МКАС та МАС при ТПП України.", 
+        'ru' : "Ее профессиональный опыт включает разрешение споров по английскому праву и представительство интересов в иностранных коммерческих арбитражах, таких как GAFTA, FOSFA и LMAA. Юлия также представляет интересы клиентов в государственных судах Украины по аналогичным спорам, а также в МКАС и МАС при ТПП Украины.", 
+        'en' : "Her professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Julia also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine", 
+    },
 }

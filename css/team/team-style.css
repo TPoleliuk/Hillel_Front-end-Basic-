@@ -8,8 +8,9 @@
 
 .team-section .card-wrap {
   gap: 30px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
   padding: 0 15px;
+  max-width: fit-content;
 }
 
 .team-section .nav-card .photo {
@@ -20,11 +21,6 @@
 
 .team-section .text-wrap .title-card {
   margin-bottom: 5px;
-}
-
-.team-section .text-wrap .description {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
 }
 
 .team-section .btn {

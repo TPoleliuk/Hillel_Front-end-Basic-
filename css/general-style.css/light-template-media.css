@@ -28,7 +28,7 @@
       "logo"
       "menu";
   }
-  .separator,
+  .header .separator,
   .header .lang-contact .address,
   .header .lang-contact .facebook {
     display: block;
@@ -105,6 +105,7 @@
 
   /*------------------------------------------------footer------------------------------------------------*/
   .footer .separator {
+    display: block;
     background-color: var(--grey-text-color);
   }
   .footer .address-contact {

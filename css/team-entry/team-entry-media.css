@@ -1,0 +1,59 @@
+@import url(../general-style.css/light-template-media.css);
+
+@media (min-width: 768px) {
+  /*--------------------------------------------team-entry----------------------------------------------*/
+  .colleague-section .container-secondary {
+    margin-bottom: 60px;
+    grid-template-areas:
+      "photo                main-info"
+      "expierence-education expierence-education";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .colleague-section .photo {
+    aspect-ratio: 1/1.25;
+    grid-area: photo;
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  .colleague-section .main-info {
+    grid-area: main-info;
+    margin: 0;
+  }
+
+  .colleague-section .expierence-education {
+    grid-area: expierence-education;
+  }
+  /*--------------------------------------------team-entry----------------------------------------------*/
+}
+
+@media (min-width: 1024px) {
+  /*--------------------------------------------team-entry----------------------------------------------*/
+  .colleague-section .container-secondary {
+    grid-template-areas:
+      "photo main-info"
+      "photo expierence-education";
+    grid-template-columns: clamp(300px, calc(100% - 680px), 400px) auto;
+    gap: 30px 60px;
+  }
+
+  .colleague-section .photo {
+    height: auto;
+  }
+  /*--------------------------------------------team-entry----------------------------------------------*/
+}
+
+@media (min-width: 1440px) {
+  /*--------------------------------------------team-entry----------------------------------------------*/
+  .colleague-section .main-info .info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .colleague-section .info .separator{
+    display: block;
+    background-color: var(--grey-separator-color);
+  }
+  /*--------------------------------------------team-entry----------------------------------------------*/
+}
