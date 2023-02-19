@@ -15,6 +15,12 @@
   --invalid-color: #ff0000;
 
   --red-text-gradient: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  --supersoft-gradient: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
 }
 
 * {
@@ -111,6 +117,10 @@ textarea {
   position: absolute;
 }
 
+.position-relative {
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
@@ -142,6 +152,21 @@ textarea {
 .title-paragraph {
   font-size: 0.875rem;
   line-height: 1.0625rem;
+}
+
+.title-article {
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+}
+
+.name {
+  font-size: 2.375rem;
+  line-height: 2.875rem;
+}
+
+.w42-h42 {
+  width: 42px;
+  height: 42px;
 }
 
 .w32-h32 {
@@ -194,6 +219,14 @@ textarea {
   color: var(--grey-text-color);
 }
 
+.color-white {
+  color: var(--white-color);
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
 .color-black {
   color: var(--black-color);
 }
@@ -228,4 +261,28 @@ textarea {
 
 .blue-btn:hover:active {
   background-color: var(--active-active-color);
+}
+
+.icon-services {
+  width: 92px;
+  height: 92px;
+  background-color: var(--white-color);
+  border-radius: 24px;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.title-content {
+  font-size: 1.25rem;
+  line-height: 1.2;
 }

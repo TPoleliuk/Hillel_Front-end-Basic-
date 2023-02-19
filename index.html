@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLEGAL: Homepage</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./css/index-style.css">
+</head>
+
+<body class="body flex flex-column">
+    <div class="dark-template position-relative">
+        <section class="header-section position-relative">
+            <header class="header">
+                <div class="container grid">
+                    <div class="lang-contact flex items-center bg-grey color-white">
+                        <div class="lang-switcher flex fs-12 fw-700">
+                            <input type="radio" name="lang" id="ua" value="ua">
+                            <label for="ua" class="lang border-radius-8 transition">UA</label>
+                            <input type="radio" name="lang" id="ru" value="ru">
+                            <label for="ru" class="lang border-radius-8 transition">RU</label>
+                            <input type="radio" name="lang" id="en" value="en" checked>
+                            <label for="en" class="lang border-radius-8 transition">EN</label>
+                        </div>
+                        <span class="separator"></span>
+                        <a href="https://goo.gl/maps/vGFTH7xQMw2SXSfv9" target="_blank" rel="noopener noreferrer"
+                            class="address" id="lng-address">Kyiv, Mechnikova str., 14/1</a>
+                        <span class="separator"></span>
+                        <a href="tel:+380800211927" class="fw-700">0800 211 927</a>
+                        <span class="separator"></span>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="flex">
+                                <path class="transition"
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="#B3B3BA" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <a href="index.html" class="logo flex gap-4">
+                        <svg class="main-part" width="69.33" height="32" viewBox="0 0 130 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.95672 6.10352e-05H0V35.7987H4.95672V22.5177C4.95672 20.271 5.51557 18.4985 6.63326 17.2503C7.75095 16.0021 9.2817 15.353 11.1769 15.353C12.8049 15.353 14.1655 15.9522 15.2589 17.1005C16.3523 18.2738 16.9112 19.7467 16.9112 21.5192V35.8236H21.8922V21.5192C21.8922 18.2239 20.9932 15.6276 19.1951 13.6804C17.3971 11.7332 15.0402 10.7596 12.1731 10.7596C11.347 10.7596 10.5209 10.8595 9.71906 11.0841C8.89294 11.3088 8.2369 11.5585 7.70235 11.8331C7.16781 12.1077 6.65756 12.4072 6.1959 12.7567C5.73424 13.1062 5.41838 13.3559 5.27259 13.5057C5.1268 13.6555 5.00532 13.7553 4.95672 13.8302V6.10352e-05Z"
+                                fill="#F0145A" />
+                            <path d="M32.9727 0H27.8628V35.7689H32.9727V0Z" fill="#FFFFFF" />
+                            <path
+                                d="M63.1116 25.2931L63.3671 22.7382C63.3671 19.3146 62.2429 16.4531 59.9435 14.1537C57.6441 11.8543 54.7825 10.7301 51.359 10.7301C47.9354 10.7301 44.9717 11.9565 42.5189 14.4092C40.0662 16.8619 38.8398 19.7745 38.8398 23.2492C38.8398 26.8261 40.1173 29.892 42.6211 32.4469C45.1249 35.0018 48.1398 36.2793 51.6144 36.2793C52.943 36.2793 54.1694 36.0749 55.3957 35.7172C56.6221 35.3084 57.6441 34.8996 58.3594 34.4909C59.1259 34.031 59.8924 33.52 60.5567 32.9579C61.2209 32.3958 61.6808 31.987 61.8852 31.7315C62.0896 31.4761 62.2429 31.3228 62.3451 31.1695L59.0237 27.8481L58.2572 28.8189C57.7463 29.4321 56.8776 30.0453 55.6512 30.7096C54.3738 31.3739 53.0452 31.6804 51.6144 31.6804C49.6216 31.6804 47.9354 31.0673 46.5046 29.7898C45.0738 28.5123 44.2052 27.0305 43.9497 25.2931H63.1116ZM51.359 15.0735C53.2496 15.0735 54.7825 15.6355 56.06 16.7086C57.2864 17.8328 58.0528 19.2124 58.3594 20.9498H44.1541C44.614 19.2124 45.4315 17.8328 46.709 16.7086C47.9354 15.6355 49.5194 15.0735 51.359 15.0735Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M86.943 34.2865C86.943 36.5348 86.2787 38.3743 84.8991 39.8051C83.5705 41.1847 81.8843 41.9001 79.7892 41.9001C78.8695 41.9001 77.9497 41.7468 77.081 41.4913C76.2124 41.2358 75.5481 40.9292 74.986 40.5715C74.4239 40.2139 73.9129 39.8562 73.4019 39.3963C72.9421 38.9364 72.6355 38.6298 72.4822 38.4765C72.3289 38.3232 72.2267 38.1699 72.1245 38.0677L68.8031 41.3891L69.2119 41.9001C69.4674 42.2578 69.9273 42.7177 70.5404 43.2287C71.1536 43.6885 71.869 44.1995 72.6866 44.7105C73.5041 45.1704 74.5261 45.5792 75.8036 45.9369C77.081 46.2946 78.4096 46.499 79.7892 46.499C83.2639 46.499 86.1254 45.3237 88.5271 42.9732C90.8776 40.5716 92.0528 37.71 92.0528 34.2354V11.2411H86.943V13.796L86.0743 13.0295C85.5123 12.5185 84.6436 12.0076 83.4172 11.4966C82.1909 10.9856 80.8623 10.7301 79.5338 10.7301C76.4168 10.7301 73.7596 11.9054 71.4602 14.307C69.1608 16.7086 68.0366 19.5701 68.0366 22.9937C68.0366 26.4173 69.1608 29.2788 71.4602 31.6804C73.7596 34.0821 76.4168 35.2573 79.5338 35.2573C80.4024 35.2573 81.22 35.1551 82.0887 34.9507C82.9062 34.6952 83.5705 34.4397 84.1326 34.1843C84.6947 33.9288 85.2057 33.6222 85.6656 33.2645C86.1254 32.9068 86.4831 32.6513 86.5853 32.5491L86.943 32.1914V34.2865ZM73.1465 22.9937C73.1465 20.8476 73.8107 19.0591 75.1904 17.5773C76.57 16.0954 78.2052 15.329 80.0447 15.329C81.8843 15.329 83.5194 16.0954 84.8991 17.5773C86.2276 19.0591 86.943 20.8476 86.943 22.9937C86.943 25.1398 86.2276 26.9283 84.8991 28.4101C83.5194 29.892 81.8843 30.6585 80.0447 30.6585C78.2052 30.6585 76.57 29.892 75.1904 28.4101C73.8107 26.9283 73.1465 25.1398 73.1465 22.9937Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M118.724 35.7683V19.9278C118.724 17.3218 117.753 15.1246 115.862 13.3872C113.972 11.5988 111.519 10.7301 108.504 10.7301C107.329 10.7301 106.154 10.8834 105.03 11.19C103.905 11.5477 102.986 11.9054 102.321 12.3142C101.657 12.7229 100.993 13.1828 100.38 13.7449C99.7664 14.2559 99.4087 14.6136 99.2043 14.818C99.051 15.0224 98.8977 15.1757 98.7955 15.329L102.117 18.6504L102.781 17.7817C103.19 17.2196 103.905 16.7086 104.978 16.1465C106.051 15.5845 107.227 15.329 108.504 15.329C109.986 15.329 111.212 15.7888 112.183 16.6575C113.154 17.5262 113.614 18.6504 113.614 19.9278L104.672 21.4608C102.475 21.8185 100.686 22.6871 99.4598 24.0668C98.1823 25.4464 97.5181 27.1327 97.5181 29.1255C97.5181 31.0162 98.3356 32.6513 99.9708 34.0821C101.657 35.5639 103.701 36.2793 106.205 36.2793C107.073 36.2793 107.891 36.1771 108.709 35.9216C109.577 35.7172 110.242 35.4617 110.804 35.2062C111.366 34.9507 111.877 34.6442 112.337 34.2865C112.796 33.9288 113.103 33.6733 113.307 33.5711C113.461 33.4178 113.563 33.2645 113.614 33.2134V35.7683H118.724ZM106.971 31.6804C105.643 31.6804 104.57 31.3739 103.803 30.7607C102.986 30.1475 102.628 29.4321 102.628 28.6145C102.628 27.7459 102.883 26.9794 103.445 26.4173C104.008 25.8552 104.774 25.4464 105.694 25.2931L113.614 24.0157V24.5267C113.614 26.8261 113.052 28.5634 111.877 29.8409C110.701 31.0673 109.066 31.6804 106.971 31.6804Z"
+                                fill="#FFFFFF" />
+                            <path d="M130 0H124.89V35.7689H130V0Z" fill="#FFFFFF" />
+                            <path d="M0 53.1185H1.59915V58.7253H5.06396V60.0283H0V53.1185Z" fill="#FFFFFF" />
+                            <path
+                                d="M15.5016 58.5477H12.2934L11.6814 60.0283H10.0428L13.1226 53.1185H14.702L17.7917 60.0283H16.1136L15.5016 58.5477ZM14.9982 57.3335L13.9025 54.688L12.8067 57.3335H14.9982Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M33.5121 53.1185L31.2516 60.0283H29.534L28.0138 55.3494L26.4443 60.0283H24.7366L22.4662 53.1185H24.1245L25.6842 57.9751L27.313 53.1185H28.7937L30.3731 58.0146L31.9821 53.1185H33.5121Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M50.5232 60.1468C49.819 60.1468 49.1807 59.9954 48.6082 59.6927C48.0422 59.3834 47.5947 58.959 47.2657 58.4193C46.9432 57.8731 46.782 57.2578 46.782 56.5734C46.782 55.889 46.9432 55.277 47.2657 54.7373C47.5947 54.1911 48.0422 53.7667 48.6082 53.464C49.1807 53.1547 49.8223 53 50.5331 53C51.1319 53 51.6716 53.1053 52.152 53.3159C52.6389 53.5265 53.047 53.8292 53.376 54.224L52.3494 55.1717C51.8821 54.6321 51.303 54.3622 50.612 54.3622C50.1843 54.3622 49.8026 54.4577 49.467 54.6485C49.1313 54.8328 48.8681 55.0927 48.6773 55.4283C48.493 55.764 48.4009 56.1456 48.4009 56.5734C48.4009 57.0012 48.493 57.3828 48.6773 57.7185C48.8681 58.0541 49.1313 58.3173 49.467 58.5082C49.8026 58.6924 50.1843 58.7846 50.612 58.7846C51.303 58.7846 51.8821 58.5115 52.3494 57.9653L53.376 58.9129C53.047 59.3143 52.6389 59.6203 52.152 59.8309C51.665 60.0415 51.1221 60.1468 50.5232 60.1468Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M62.5933 60.1468C61.876 60.1468 61.2278 59.9922 60.6487 59.6829C60.0761 59.3736 59.6253 58.9491 59.2963 58.4095C58.9738 57.8632 58.8126 57.2512 58.8126 56.5734C58.8126 55.8956 58.9738 55.2868 59.2963 54.7472C59.6253 54.201 60.0761 53.7733 60.6487 53.464C61.2278 53.1547 61.876 53 62.5933 53C63.3106 53 63.9555 53.1547 64.5281 53.464C65.1006 53.7733 65.5514 54.201 65.8804 54.7472C66.2095 55.2868 66.374 55.8956 66.374 56.5734C66.374 57.2512 66.2095 57.8632 65.8804 58.4095C65.5514 58.9491 65.1006 59.3736 64.5281 59.6829C63.9555 59.9922 63.3106 60.1468 62.5933 60.1468ZM62.5933 58.7846C63.0013 58.7846 63.3698 58.6924 63.6989 58.5082C64.0279 58.3173 64.2846 58.0541 64.4688 57.7185C64.6597 57.3828 64.7551 57.0012 64.7551 56.5734C64.7551 56.1456 64.6597 55.764 64.4688 55.4283C64.2846 55.0927 64.0279 54.8328 63.6989 54.6485C63.3698 54.4577 63.0013 54.3622 62.5933 54.3622C62.1853 54.3622 61.8168 54.4577 61.4877 54.6485C61.1587 54.8328 60.8987 55.0927 60.7079 55.4283C60.5236 55.764 60.4315 56.1456 60.4315 56.5734C60.4315 57.0012 60.5236 57.3828 60.7079 57.7185C60.8987 58.0541 61.1587 58.3173 61.4877 58.5082C61.8168 58.6924 62.1853 58.7846 62.5933 58.7846Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M78.7995 60.0283L78.7896 55.8824L76.7561 59.2979H76.0355L74.0119 55.9713V60.0283H72.5115V53.1185H73.8342L76.4205 57.4125L78.9673 53.1185H80.2802L80.2999 60.0283H78.7995Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M89.8659 53.1185C90.478 53.1185 91.0077 53.2205 91.4552 53.4245C91.9093 53.6285 92.2581 53.918 92.5016 54.2931C92.7451 54.6682 92.8668 55.1125 92.8668 55.6258C92.8668 56.1325 92.7451 56.5767 92.5016 56.9584C92.2581 57.3335 91.9093 57.623 91.4552 57.8271C91.0077 58.0245 90.478 58.1232 89.8659 58.1232H88.4741V60.0283H86.8749V53.1185H89.8659ZM89.7771 56.8202C90.2575 56.8202 90.6227 56.7182 90.8728 56.5142C91.1229 56.3036 91.2479 56.0074 91.2479 55.6258C91.2479 55.2375 91.1229 54.9414 90.8728 54.7373C90.6227 54.5268 90.2575 54.4215 89.7771 54.4215H88.4741V56.8202H89.7771Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M103.148 58.5477H99.9396L99.3276 60.0283H97.6889L100.769 53.1185H102.348L105.438 60.0283H103.76L103.148 58.5477ZM102.644 57.3335L101.549 54.688L100.453 57.3335H102.644Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M117.428 53.1185V60.0283H116.115L112.67 55.8331V60.0283H111.09V53.1185H112.413L115.848 57.3137V53.1185H117.428Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M127.315 57.5803V60.0283H125.716V57.5605L123.041 53.1185H124.739L126.585 56.1884L128.43 53.1185H130L127.315 57.5803Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                    </a>
+                    <div class="menu flex">
+                        <input type="checkbox" class="burger-checkbox w32-h32 position-absolute">
+                        <p class="burger border-radius-8 w32-h32 position-absolute">
+                            <span class="position-absolute transition"></span>
+                            <span class="position-absolute transition"></span>
+                            <span class="position-absolute transition"></span>
+                            <span class="position-absolute transition"></span>
+                        </p>
+                        <div class="bg-menu transition"></div>
+                        <nav class="nav transition">
+                            <ul class="nav-wrap border-radius-12 flex">
+                                <li class="nav-link border-radius-12 bg-grey"><a class="fw-700" href="#"
+                                        id="lng-about-us">about
+                                        us</a></li>
+                                <li class="nav-link border-radius-12 bg-grey"><a class="fw-700"
+                                        href="./pages/services-page.html" id="lng-services">services</a></li>
+                                <li class="nav-link border-radius-12 bg-grey"><a class="fw-700"
+                                        href="./pages/team-page.html" id="lng-team">team</a></li>
+                                <li class="nav-link border-radius-12 bg-grey"><a class="fw-700" href="#"
+                                        id="lng-publications">publications</a>
+                                </li>
+                                <li class="nav-link border-radius-12 bg-grey"><a class="fw-700"
+                                        href="./pages/contact-page.html" id="lng-contact">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <h1 class="name position-absolute text-center">you legal solutions provider</h1>
+            <a href="#tabs-section" class="link-to-main w42-h42 position-absolute flex justify-center items-center transition">
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition" d="M1 1L10 10L19 1" stroke="white" stroke-width="2" />
+                </svg>
+            </a>
+        </section>
+
+        <section class="tabs-section" id="tabs-section">
+            <div class="container">
+                <div class="container-secondary flex gap-30 flex-column">
+                    <div class="tabs-line flex flex-column">
+                        <div id="tabs-button" class="main-title fw-700">
+                            <button type="button" class="tab-btn color-grey-text active"
+                                data-tab-name="consistent">Consistent</button>
+                            <button type="button" class="tab-btn color-grey-text"
+                                data-tab-name="customer-oriented">Customer
+                                oriented</button>
+                            <button type="button" class="tab-btn color-grey-text"
+                                data-tab-name="innovative">Innovative</button>
+                            <button type="button" class="tab-btn color-grey-text"
+                                data-tab-name="business-oriented">Business
+                                oriented</button>
+                        </div>
+                        <hr class="dark-line-tab height-4">
+                    </div>
+                    <div id="tabs-content">
+                        <div class="content-item active consistent">
+                            <h2 class="title-content">We turn the idea of legal services</h2>
+                            <p class="content-tab">Consolidating many years of experience and practice, the company's
+                                lawyers accompany complex projects and achieve a number of important decisions for the
+                                industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </div>
+                        <div class="content-item customer-oriented">
+                            <h2 class="title-content">The customer is always right</h2>
+                            <p class="content-tab">Being customer-oriented means striving to provide the best services,
+                                operating around the wants and predicting the needs of its customers, using tools like
+                                customer feedback to improve its public image and provide value to consumers.</p>
+                        </div>
+                        <div class="content-item innovative">
+                            <h2 class="title-content">Innovation is the key to stay relevant</h2>
+                            <p class="content-tab">Innovative approach helps us differentiate from the rest, chieve
+                                success in difficult cases, fight uncertainties and stay relevant in times of
+                                adversities. Therefore, it is required element to adapt and overcome the challenges of change.</p>
+                        </div>
+                        <div class="content-item business-oriented">
+                            <h2 class="title-content">Business oriented</h2>
+                            <p class="content-tab">We do not stick to a single orientation approach. Instead, we combine
+                                their elements. So, we regulary rethink our strategy to align with consumer demands,
+                                through exceptional service, innovative products, and personalised marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <div class="container-secondary">
+                    <a href="./pages/services-page.html"
+                        class="title-paragraph letter-spacing-1 fw-700 typical-link transition flex items-center">SERVICES
+                        <svg width="12" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="transition" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <h2 class="main-title red-text-gradient">What can we do better than others?</h2>
+                    <div class="card-wrap grid gap-30">
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/e-commerce.svg" alt="e-commerce">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">IT and e-commerce</h3>
+                                <p class="article-text">An endless stream of contracts, tax issues, labor relations,
+                                    corporate papers - legal work distracts you from doing business. But there is
+                                    not much work to do to hire an in-house lawyer.
+                                </p>
+                            </div>
+                        </a>
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/support.svg" alt="support">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">Comprehensive daily
+                                    legal support</h3>
+                                <p class="article-text">In addition, over time, the work will become the same type
+                                    and uninteresting for a full-time lawyer. And we know very well how difficult it
+                                    is to find a good candidate with experience in the field of information
+                                    technology in Ukraine.
+                                </p>
+                            </div>
+                        </a>
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/corporate.svg" alt="corporate">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">Structuring corporate
+                                    relationships</h3>
+                                <p class="article-text">Instead of just providing legal services, we will hire a
+                                    lawyer or a whole team that will fit into the daily life of your company.
+                                </p>
+                            </div>
+                        </a>
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/trust.svg" alt="trust">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">Building contractual
+                                    relations</h3>
+                                <p class="article-text">Once a week, or week after month, you have your own lawyer
+                                    by your side. Anyone in the company can catch it at the coffee maker and just
+                                    talk about current affairs instead of waiting for update status.
+                                </p>
+                            </div>
+                        </a>
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/protection.svg" alt="protection">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">Protection of business,
+                                    intellectual property</h3>
+                                <p class="article-text">And all the other time he will work on new diverse projects,
+                                    so he will definitely not stop in professional development. One way or another,
+                                    all Axon Partners will work for you instead of a corporate lawyer.
+                                </p>
+                            </div>
+                        </a>
+                        <a class="nav-card flex flex-column gap-30" href="#">
+                            <div class="icon-services flex justify-center items-center">
+                                <img src="./images/service-icon/court.svg" alt="court">
+                            </div>
+                            <div class="text-wrap flex flex-column gap-15">
+                                <h3 class="title-article color-active-regular transition">Judicial representation
+                                </h3>
+                                <p class="article-text">Is it a small, medium-sized company or a market leader?
+                                    Local business or multinational company? Do you have your own legal department
+                                    or not?
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="slide-section">
+                <div id="slide-card">
+                    <div class="card border-radius-12 slick-list flex flex-column">
+                        <img class="photo" src="./images/team-photo/alexandrovsky.jpg" alt="Alexander Alexandrovsky">
+                        <div class="text-wrap bg-grey">
+                            <a href="./pages/team-page.html"
+                                class="title-paragraph letter-spacing-1 typical-link flex items-center fw-700 transition">TEAM
+                                <svg width="12" height="12" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF"
+                                        stroke-width="2" />
+                                </svg>
+                            </a>
+                            <p class="main-title red-text-gradient fw-700">We are used to taking responsibility and
+                                always guarantee honest, timely assistance, even in situations where most are powerless.
+                            </p>
+                            <h4 class="name-employee color-grey-text">Alexander Alexandrovsky
+                            </h4>
+                            <p class="description color-grey-text">Managing partner</p>
+                        </div>
+                    </div>
+                    <div class="card border-radius-12 slick-list flex flex-column">
+                        <img class="photo" src="./images/team-photo/binn.jpg" alt="Sergey Binn">
+                        <div class="text-wrap bg-grey">
+                            <a href="./pages/team-page.html"
+                                class="title-paragraph letter-spacing-1 typical-link flex items-center fw-700 transition">TEAM
+                                <svg width="12" height="12" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF"
+                                        stroke-width="2" />
+                                </svg>
+                            </a>
+                            <p class="main-title red-text-gradient fw-700">We are used to taking responsibility and
+                                always guarantee honest, timely assistance, even in situations where most are powerless.
+                            </p>
+                            <h4 class="name-employee color-grey-text">Sergey Binn
+                            </h4>
+                            <p class="description color-grey-text">Associate</p>
+                        </div>
+                    </div>
+                    <div class="card border-radius-12 slick-list flex flex-column">
+                        <img class="photo" src="./images/team-photo/kobzar.jpg" alt="Oksana Kobzar">
+                        <div class="text-wrap bg-grey">
+                            <a href="./pages/team-page.html"
+                                class="title-paragraph letter-spacing-1 typical-link flex items-center fw-700 transition">TEAM
+                                <svg width="12" height="12" viewBox="0 0 12 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="transition" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF"
+                                        stroke-width="2" />
+                                </svg>
+                            </a>
+                            <p class="main-title red-text-gradient fw-700">We are used to taking responsibility and
+                                always guarantee honest, timely assistance, even in situations where most are powerless.
+                            </p>
+                            <h4 class="name-employee color-grey-text">Oksana Kobzar
+                            </h4>
+                            <p class="description color-grey-text">Equity partner, Attorney-at-law</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="partners-section">
+                <h3 class="title-paragraph letter-spacing-1 text-center">THEY ALREADY TRUST US</h3>
+                <div class="wrap-logo grid">
+                    <div class="partner-logo bg-hillel flex items-center justify-center">
+                        <img src="./images/partnets-logo/hillel.png" alt="hillel-logo">
+                    </div>
+                    <div class="partner-logo bg-wannabiz flex items-center justify-center">
+                        <img src="./images/partnets-logo/wannabiz.png" alt="wannabiz-logo">
+                    </div>
+                    <div class="partner-logo bg-tapgerine flex items-center justify-center">
+                        <img src="./images/partnets-logo/tapgerine.png" alt="tapgerine-logo">
+                    </div>
+                    <div class="partner-logo bg-3dlook flex items-center justify-center">
+                        <img src="./images/partnets-logo/3dlook.png" alt="3dlook-logo">
+                    </div>
+                    <div class="partner-logo bg-orangear flex items-center justify-center">
+                        <img src="./images/partnets-logo/orangear.png" alt="orangear-logo">
+                    </div>
+                    <div class="partner-logo bg-adtelligent flex items-center justify-center">
+                        <img src="./images/partnets-logo/adtelligent.png" alt="adtelligent-logo">
+                    </div>
+                    <div class="partner-logo bg-clickky flex items-center justify-center">
+                        <img src="./images/partnets-logo/clickky.png" alt="clickky-logo">
+                    </div>
+                    <div class="partner-logo bg-ecoleasing flex items-center justify-center">
+                        <img src="./images/partnets-logo/ecoleasing.png" alt="ecoleasing-logo">
+                    </div>
+                    <div class="partner-logo bg-infrate flex items-center justify-center">
+                        <img src="./images/partnets-logo/infratek.png" alt="infrate-logo">
+                    </div>
+                    <div class="partner-logo bg-citypark flex items-center justify-center">
+                        <img src="./images/partnets-logo/citypark.png" alt="citypark-logo">
+                    </div>
+                    <div class="partner-logo bg-artprint flex items-center justify-center">
+                        <img src="./images/partnets-logo/artprint.png" alt="artprint-logo">
+                    </div>
+                    <div class="partner-logo bg-ultimatecard flex items-center justify-center">
+                        <img src="./images/partnets-logo/ultimatecard.png" alt="ultimatecard-logo">
+                    </div>
+                </div>
+    </section>
+
+    <section class="publications-section bg-grey">
+        <div class="container">
+            <div class="container-secondary">
+                <a href="./pages/services-page.html"
+                    class="title-paragraph letter-spacing-1 fw-700 typical-link transition flex items-center">PUBLICATIONS
+                    <svg width="12" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="transition" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                    </svg>
+                </a>
+                <h2 class="main-title red-text-gradient">We have something to tell</h2>
+                <div class="wrap-articles grid gap-30">
+                    <a href="#" class="card card-1 slick-list border-radius-8 flex flex-column">
+                        <img class="photo" src="./images/publications-image/equity-associate.jpg"
+                            alt="equity-associate">
+                        <div class="text-wrap bg-white flex flex-column gap-15">
+                            <p class="typical-link transition fw-700">Equity associate</p>
+                            <p class="fs-12 letter-spacing-1 color-grey-text fw-700">APRIL 22</p>
+                            <hr class="grey-line height-4">
+                            <p class="description color-black">I'm a jun on projects. I am a co-owner of a law firm.
+                                How it happened. Before entering my parents told me that if I…</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card card-2 slick-list border-radius-8 flex flex-column">
+                        <img class="photo" src="./images/publications-image/gdpr.jpg" alt="equity-associate">
+                        <div class="text-wrap bg-white flex flex-column gap-15">
+                            <p class="typical-link transition fw-700">Penalty for the Good Corporation: what
+                                will happen to Google and others for violating the GDPR</p>
+                            <p class="fs-12 letter-spacing-1 color-grey-text fw-700">SEPTEMBER 29</p>
+                            <hr class="grey-line height-4">
+                            <p class="description color-black">And why the recovery of 50 million euros could be a
+                                fateful precedent According to Mind.ua January 21 National Commission for Data
+                                Protection.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card card-3 slick-list border-radius-8 flex flex-column">
+                        <img class="photo" src="./images/publications-image/millennial-testament.jpg"
+                            alt="equity-associate">
+                        <div class="text-wrap bg-white flex flex-column gap-15">
+                            <p class="typical-link transition fw-700">Millennial Testament</p>
+                            <p class="fs-12 letter-spacing-1 color-grey-text fw-700">AUGUST 19</p>
+                            <hr class="grey-line height-4">
+                            <p class="description color-black">What and how modern vloggers, opinion leaders and
+                                crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks
+                                like this: an apartment in…</p>
+                        </div>
+                    </a>
+                    <hr class="grey-line height-2">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer bg-grey">
+        <div class="container grid">
+            <div class="address-contact address-part flex gap-10">
+                <p class="address">Kyiv, Mechnikova str., 14/1</p>
+                <span class="separator"></span>
+                <a href="https://goo.gl/maps/vGFTH7xQMw2SXSfv9" target="_blank" rel="noopener noreferrer"
+                    class="address-link fs-12 fw-700 typical-link letter-spacing-1 transition" id="lng-on-map">ON
+                    MAP</a>
+            </div>
+            <div class="address-contact contact-part flex gap-10">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="facebook">
+                    <svg width="38" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="flex">
+                        <path class="transition"
+                            d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                            fill="#24A3FF" />
+                    </svg>
+                </a>
+                <span class="separator"></span>
+                <a href="tel:+380800211927" class="tel fw-700">0800 211 927</a>
+                <span class="separator"></span>
+                <a href="mailto:contact@forstudy.space"
+                    class="mail fw-700 typical-link transition">contact@forstudy.space</a>
+            </div>
+            <div class="copyright-part color-grey-text flex">
+                <p class="copyright">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-3.6.3.min.js"></script>
+    <script src="./assets/slick.min.js"></script>
+    <script src="./script/index.js"></script>
+    <script src="./script/lang-library.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

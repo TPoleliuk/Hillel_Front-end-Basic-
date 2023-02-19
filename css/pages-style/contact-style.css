@@ -1,0 +1,46 @@
+@import url(../general-style/template/light-template.css);
+@import url(../general-style/elements/form.css);
+
+.contact-section .container-secondary {
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.contact-section .contact-part {
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+}
+.contact-section .contact-part .mail {
+  max-width: max-content;
+  font-size: 6.4vw;
+}
+.contact-section .contact-part .facebook {
+  max-width: max-content;
+}
+.contact-section .contact-part .facebook-link {
+  line-height: 1rem;
+  margin-bottom: 1px;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+
+@media (min-width: 328px) {
+  .contact-section .contact-part .mail {
+    font-size: 1.3125rem;
+  }
+}
+@media (min-width: 768px) {
+  .contact-section .container-secondary {
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .facebook:hover .facebook-link {
+    color: var(--accent-color);
+  }
+}
+@media (min-width: 1024px) {
+  .contact-section .container-secondary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

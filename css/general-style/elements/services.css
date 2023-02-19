@@ -1,0 +1,30 @@
+.services-section .main-title {
+  margin-bottom: 30px;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+@media (min-width: 768px) {
+  .services-section .main-title {
+    margin-bottom: 60px;
+  }
+  .card-wrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-section .container-secondary {
+    padding: 0;
+  }
+
+  .card-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services-section .nav-card:hover .title-article {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,56 @@
+@import url(./light-template.css);
+
+.dark-template {
+  background-image: var(--supersoft-gradient);
+  color: white;
+  padding-bottom: 60px;
+  border-radius: 0px 0px 12px 12px;
+}
+.dark-template::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #cacadb;
+  top: 100%;
+  right: 20px;
+}
+.dark-template::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 80px);
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #e7e7f2;
+  top: calc(100% + 10px);
+  right: 40px;
+}
+.dark-template .header .lang-contact {
+  background: rgba(245, 245, 250, 0.2);
+}
+.dark-template .menu .burger span {
+  background-color: var(--white-color);
+}
+.header .menu .nav-link::after {
+  background-color: var(--white-color);
+}
+
+/*----------------------------------------------media-----------------------------------------------*/
+
+@media (min-width: 768px) {
+  .dark-template .header {
+    margin-bottom: 65px;
+  }
+  .dark-template .header .lang-contact {
+    background: transparent;
+  }
+  .header .menu .nav-link a {
+    color: var(--white-color);
+  }
+}
+@media (min-width: 1440px) {
+  .header .lang-contact .lang-switcher .lang:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

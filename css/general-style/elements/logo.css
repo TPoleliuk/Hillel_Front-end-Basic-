@@ -1,0 +1,75 @@
+.wrap-logo {
+  margin-top: 30px;
+  height: 720px;
+  overflow-y: auto;
+}
+.partner-logo {
+  height: 120px;
+}
+.bg-hillel {
+  background-color: #1c4280;
+}
+.bg-wannabiz {
+  background-color: #143646;
+}
+.bg-tapgerine {
+  background-color: #f48b30;
+}
+.bg-3dlook {
+  background-color: #9e4dc3;
+}
+.bg-orangear {
+  background-color: #fd9339;
+}
+.bg-adtelligent {
+  background-color: #e2e2e4;
+}
+.bg-clickky {
+  background-color: #c71c36;
+}
+.bg-ecoleasing {
+  background-color: #dcf3f9;
+}
+.bg-infrate {
+  background-color: #eaeaea;
+}
+.bg-citypark {
+  background-color: #282240;
+}
+.bg-artprint {
+  background-color: #1d4568;
+}
+.bg-ultimatecard {
+  background-color: #000000;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .wrap-logo {
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrap-logo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrap-logo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    margin: 30px clamp(0px, calc((100vw - 1720px) / 2), 100px) clamp(0px, calc(100vw - 1440px), 60px);
+    border-radius: clamp(0px, calc(100vw - 1908px), 12px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrap-logo {
+    max-width: 1720px;
+    margin: 30px auto 60px;
+  }
+}

@@ -1,0 +1,15 @@
+.publications-section .card .photo {
+  height: 200px;
+  object-fit: cover;
+}
+.publications-section .card .text-wrap {
+  padding: 30px;
+  flex: auto;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+@media (min-width: 1440px) {
+  .publications-section .card:hover .typical-link {
+    color: var(--accent-color);
+  }
+}

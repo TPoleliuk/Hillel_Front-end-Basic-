@@ -1,0 +1,52 @@
+@import url(./publication-card.css);
+
+.publications-section {
+  padding-top: 30px;
+}
+.publications-section .title-paragraph {
+  gap: 2px;
+  max-width: max-content;
+}
+.publications-section .main-title {
+  margin: 5px 0 30px;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .publications-section .main-title {
+    margin: 10px 0 30px;
+  }
+  .publications-section .wrap-articles {
+    grid-template-areas:
+    "card-1 card-2"
+    "card-3 card-3"
+    "grey-line grey-line";
+  }
+  .publications-section .wrap-articles .card-1 {
+    grid-area: card-1;
+  }
+  .publications-section .wrap-articles .card-2 {
+    grid-area: card-2;
+  }
+  .publications-section .wrap-articles .card-3 {
+    grid-area: card-3;
+  }
+  .publications-section .wrap-articles .card-3 {
+    grid-area: card-3;
+  }
+  .publications-section .wrap-articles .grey-line {
+    grid-area: grey-line;
+  }
+}
+
+@media (min-width: 1024px) {
+  .publications-section .container-secondary {
+    padding: 0;
+  }
+  .publications-section .wrap-articles {
+    grid-template-areas:
+    "card-1 card-2 card-3"
+    "grey-line grey-line grey-line";
+  }
+}

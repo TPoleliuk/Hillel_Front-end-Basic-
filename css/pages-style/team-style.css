@@ -1,0 +1,59 @@
+@import url(../general-style/template/light-template.css);
+
+.team-section .main-title {
+  margin: 0 0 30px;
+}
+.team-section .card-wrap {
+  gap: 30px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+  max-width: fit-content;
+}
+.team-section .nav-card .photo {
+  aspect-ratio: 1.05/1;
+  max-height: 400px;
+  object-fit: cover;
+}
+.team-section .text-wrap .title-card {
+  margin-bottom: 5px;
+}
+.team-section .btn {
+  border-radius: 50%;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .team-section .main-title {
+    margin: 0px auto 60px;
+    padding: 0 calc((100% - 664px) / 2);
+  }
+  .team-section .card-wrap {
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    max-width: 100%;
+  }
+  .team-section .nav-card .photo {
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .team-section .main-title {
+    padding: 0;
+  }
+  .team-section .card-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .team-section .nav-card:hover .title-card {
+    color: var(--accent-color);
+  }
+  .team-section .nav-card:hover svg path {
+    stroke: var(--accent-color);
+  }
+  .team-section .nav-card:hover .btn {
+    background-color: var(--grey-bg-alt-color);
+  }
+}
