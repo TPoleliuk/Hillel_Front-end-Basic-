@@ -1,8 +1,8 @@
 /*---------------------------------блок скролінгу при відкритті бургер-меню------------------------------------*/
 const burgerMenu = document.querySelector('.burger-checkbox');
-const body = document.querySelector('.body');
 
 burgerMenu.addEventListener('change', function(event) {
+    const body = document.querySelector('.body');
     if (event.target.checked) {
         body.classList.add('lock')
     }

@@ -54,6 +54,7 @@
 .header .logo .active-page {
   font-size: 1.25rem;
 }
+
 /*---------------------------------------------burger-menu----------------------------------------------*/
 .header .menu {
   padding: 12.5px 0;
@@ -289,7 +290,6 @@ body.lock {
     display: block;
     height: 2px;
     background-color: var(--active-regular-color);
-    transition: 0.2s linear all;
   }
   .header .menu .nav-link.active::after {
     background-color: var(--accent-color);
@@ -355,16 +355,29 @@ body.lock {
   .container-secondary {
     padding: 0px 120px;
   }
+  .typical-link,
+  .facebook svg path,
+  .header .lang-contact .lang-switcher .lang,
+  .header .menu .nav-link::after,
+  .title-paragraph svg path {
+    transition: 0.2s linear all;
+  }
   .typical-link:hover {
     color: var(--accent-color);
   }
   .facebook:hover svg path {
     fill: var(--accent-color);
   }
+  .blue-btn {
+    cursor: pointer;
+    transition: 0.2s linear all;
+  }
   .blue-btn:hover {
     background-color: var(--active-hover-color);
   }
-
+  .title-paragraph:hover svg path {
+    stroke: var(--accent-color);
+  }
   /*------------------------------------------------header------------------------------------------------*/
   .header .lang-contact .lang-switcher .lang:hover {
     cursor: pointer;

@@ -9,6 +9,9 @@
 
 /*------------------------------------------------media-------------------------------------------------*/
 @media (min-width: 1440px) {
+  .publications-section .card .typical-link {
+    transition: 0.2s linear all;
+  }
   .publications-section .card:hover .typical-link {
     color: var(--accent-color);
   }

@@ -1,0 +1,99 @@
+@import url(../general-style/template/dark-template.css);
+@import url(../general-style/elements/pablications/publications-wrap.css);
+@import url(../general-style/elements/form.css);
+
+.main-section {
+  margin: 30px 0;
+}
+.main-section .container-secondary {
+  gap: 28px;
+}
+.main-section .container-secondary .just-content {
+  gap: 20px;
+}
+.details-section .separator-line {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border: none;
+}
+.details-section .wrap-list .list-item:nth-child(4) {
+  margin-bottom: 15px;
+}
+.details-section .wrap-list .list-item {
+  margin-left: 14px;
+  position: relative;
+}
+.details-section .wrap-list .list-item::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: -14px;
+  top: 12px;
+  border-radius: 50%;
+}
+.publications-section {
+  margin-top: 80px;
+}
+
+/*---------------------------------------------popup-window---------------------------------------------*/
+.main-section #popup-window .bg-popup {
+  background-color: var(--white-color);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+}
+.main-section #popup-window.open > .bg-popup {
+  background-color: var(--main-regular-color);
+  z-index: 3;
+  opacity: 0.7;
+}
+.main-section #popup-window .wrap-form {
+  padding: 0.5rem;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  top: 100%;
+}
+.main-section #popup-window.open .wrap-form {
+  top: 0%;
+}
+.main-section .wrap-form .form {
+  max-width: 650px;
+  margin: auto;
+  width: 100%;
+}
+.main-section .form #close-dagger {
+  background-color: transparent;
+}
+
+/*------------------------------------------------media-------------------------------------------------*/
+
+@media (min-width: 768px) {
+  .main-section {
+    margin: 0 0 60px;
+  }
+  .details-section .wrap-list .list-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .details-section .wrap-list {
+    columns: 2;
+    gap: 60px;
+    display: block;
+  }
+  .details-section .wrap-list .list-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-section .form #close-dagger {
+    cursor: pointer;
+    transition: 0.2s linear all;
+  }
+  .main-section .form #close-dagger:hover {
+    background-color: var(--grey-separator-color);
+  }
+}

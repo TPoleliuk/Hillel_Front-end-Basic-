@@ -171,7 +171,7 @@
   .tabs-section .container-secondary {
     display: grid;
     grid-template-columns: 439px auto;
-    margin-top: 60px;
+    padding-top: 60px;
     align-items: center;
   }
   .tabs-section #tabs-button {
@@ -207,6 +207,11 @@
 }
 
 @media (min-width: 1440px) {
+  .header-section .link-to-main,
+  .header-section .link-to-main svg path,
+  .tabs-section #tabs-button .tab-btn {
+    transition: 0.2s linear all;
+  }
   .header-section .link-to-main:hover {
     border-color: rgba(240, 20, 90, 0.5);
   }
@@ -214,14 +219,7 @@
     stroke: var(--accent-color);
   }
 
-  .title-paragraph:hover svg path {
-    stroke: var(--accent-color);
-  }
   /*----------------------------------------------tabs------------------------------------------------*/
-  .tabs-section #tabs-button .tab-btn {
-    transition: 0.2s linear all;
-  }
-
   .tabs-section #tabs-button .tab-btn:hover {
     cursor: pointer;
     color: var(--accent-color);

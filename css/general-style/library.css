@@ -109,6 +109,10 @@ textarea {
   align-items: flex-end;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .grid {
   display: grid;
 }
@@ -211,6 +215,10 @@ textarea {
   gap: 30px;
 }
 
+.l-r-padding-30 {
+  padding: 0 30px;
+}
+
 .color-active-regular {
   color: var(--active-regular-color);
 }
@@ -255,7 +263,6 @@ textarea {
   color: var(--white-color);
   background-color: var(--active-regular-color);
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  cursor: pointer;
   min-height: 56px;
 }
 
@@ -285,4 +292,18 @@ textarea {
 .title-content {
   font-size: 1.25rem;
   line-height: 1.2;
+}
+
+.just-content {
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+}
+
+.list-item {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }

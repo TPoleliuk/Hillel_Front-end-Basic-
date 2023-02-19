@@ -35,6 +35,9 @@
   }
 }
 @media (min-width: 1440px) {
+  .facebook .facebook-link {
+    transition: 0.2s linear all;
+  }
   .facebook:hover .facebook-link {
     color: var(--accent-color);
   }

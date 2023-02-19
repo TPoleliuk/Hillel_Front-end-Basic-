@@ -9,6 +9,7 @@ linkToMain.addEventListener('click', (e) => {
       });
 })
 
+
 /*--------------------------------------------------tabs-------------------------------------------------*/
 let tabsButton = Array.from(document.querySelectorAll('#tabs-button .tab-btn'));
 let tabsContent = Array.from(document.querySelectorAll('#tabs-content .content-item'));
@@ -77,6 +78,7 @@ $(window).on('load resize', function() {
     })
   }
 });
+
 
 /*-------------------------------------------------slider------------------------------------------------*/
 $('#slide-card').slick({

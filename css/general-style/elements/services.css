@@ -24,6 +24,9 @@
 }
 
 @media (min-width: 1440px) {
+  .services-section .nav-card .title-article {
+    transition: 0.2s linear all;
+  }
   .services-section .nav-card:hover .title-article {
     color: var(--accent-color);
   }

@@ -47,6 +47,11 @@
   }
 }
 @media (min-width: 1440px) {
+  .team-section .nav-card .title-card,
+  .team-section .nav-card svg path,
+  .team-section .nav-card .btn {
+    transition: 0.2s linear all;
+  }
   .team-section .nav-card:hover .title-card {
     color: var(--accent-color);
   }
