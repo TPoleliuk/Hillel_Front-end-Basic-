@@ -8,7 +8,11 @@ freeConsultation.addEventListener('click', function(event) {
     body.classList.add('lock') 
 
     popupWindow.classList.add('open')  
-    setTimeout(function() {document.querySelector('#popup-window.open .wrap-form').classList.add('overflow-y-auto')}, 200)
+    setTimeout(function() {
+        document.querySelector('#popup-window.open .wrap-form').classList.remove('overflow-y-hidden')
+        document.querySelector('#popup-window.open .wrap-form').classList.add('overflow-y-auto')
+    }, 200)
+    marginTopForm()
 })
 
 window.onload = function () {
